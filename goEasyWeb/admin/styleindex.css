@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+:root{
+    --green: #8dc7a4;
+    --white: #fff;
+    --gray: #262626;
+    --green2: #216651;
+    --green3: #e0e6d7;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: var(--white);
+    padding: 5px;
+    border-color: var(--green);
+    border-style:solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+h2{
+    margin: 10px;
+    text-align: center;
+    color: var(--green2);
+    text-shadow: 2px 0px 10px var(--green);
+}
+.button-box{
+    width: 210px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    border-color: var(--green);
+    border-style:solid;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: var(--green);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 167px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.kolom{
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1;
+    font-size: 12pt;
+}
+.submit{
+    width: 50%;
+    padding: 10px 30px;
+    display: block;
+    margin: 30px 69px;
+    background: var(--green);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-size: 9pt;
+}
+#masuk{
+    left: 50px;
+}
+#daftar{
+    left: 450px;
+}

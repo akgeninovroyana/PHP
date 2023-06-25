@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    font-family: Nunito;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #8dc7a4;
+    --white: #fff;
+    --gray: #262626;
+    --green2: #216651;
+    --green3: #e0e6d7;
+}
+.content{
+    background: var(--green);
+    width:100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+}
+.content span{
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+.navigation{
+    background: var(--green);
+    width: 250px;
+    position: fixed;
+    border-left: 14px solid var(--green);
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    top: 36px;
+    z-index: 1;
+}
+
+.navigation ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: left;
+}
+
+.navigation ul li:hover {
+    background-color: var(--white);
+    text-align: center;
+    cursor: pointer;
+}
+.navigation ul li .list{
+    display: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.navigation ul li .list ul li{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.navigation ul li:hover .list{
+    display: block;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 1px;
+}
+.navigation ul li:hover .list ul li:hover{
+    display: block;
+    cursor: pointer;
+    left: 10px;
+    background: var(--green);
+    margin: 10px;
+    width: 91%;
+}
+.navigation ul li a{
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    min-width: 50px;
+    height: 60px;
+    padding-right: 10px;
+    margin: 8px;
+    font-size: large;
+    line-height: 80px;
+    text-align: center;
+}
+
+.navigation ul li a .title{
+    line-height: 60px;
+}
+.keluar{
+    margin-top: 330px;
+}
+.main-content{
+    margin-left: 280px;
+    margin-top: 66px;
+}
+.data{
+    background: var(--white);
+    width:100%;
+    position: fixed;
+    text-align: left;
+    top: 36px;
+    height: auto;
+    margin-left: -30px;
+}
+.data span{
+    font-size: 15pt;
+    padding-left: 30px;
+}
+.cards{
+    display: flex;
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px 2px rgb(0,0,0,0.1);
+    margin-left: 25px auto;
+}
+.card-single span{
+    font-size: 35px;
+    margin: 0 5px 0 0;
+}
+.main-content ul li a{
+    text-decoration: none;
+    color: var(--gray);
+}
+.icon-action{
+    color: var(--green2);
+    margin: 10px;
+}
+th{
+    position: sticky;
+    top: 63px;
+    background: var(--green3);
+}
+.add-float{
+    position: fixed;
+    right: 10px;
+    overflow: hidden;
+    width: 75px;
+    height: 90px;
+    border: 0;
+    z-index: 999;
+    transition: .2s;
+    bottom: 50px;
+    cursor: pointer;
+    background: transparent;
+}
+.add-float i{
+    background: var(--green3);
+    border-radius: 100%;
+}
+.add-float span{
+    background: var(--green3);
+    font-weight: bold;
+}
